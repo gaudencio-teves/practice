@@ -15,45 +15,24 @@
     <nav class="white" role="navigation">
         <div class="nav-wrapper container">
             <a id="logo-container" href="#" class="center brand-logo">Logo</a>
-            <ul id="nav-mobile" class="left hide-on-med-and-down button-collapse"">
-                <li><a href="#">Navbar Link</a></li>
-                <li><a href="#">Navbar Link</a></li>
+            <ul class="right hide-on-med-and-down">
+                <a class='waves-effect modal-trigger btn' href='#modal1'>Login</a>
             </ul>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <?php if(isset($this->session->userdata['result']) && is_array($this->session->userdata['result'])){
-                    ?>
-                    <a class='waves-effect dropdown-button btn' href='#' data-beloworigin="true" data-activates='login-l'>Profile</a>
-                    <ul id='login-l' class='dropdown-content'>
-                        <li><a href="#!">one</a></li>
-                        <li><a href="#!">two</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#!">three</a></li>
-                    </ul>
-                <?php
-                } else{
-                    ?>
-                    <a class='waves-effect modal-trigger btn' href='#modal1'>Login</a>
-
-                <?php } ?>
+            <ul class="left hide-on-med-and-down">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Forums</a></li>
+                <li><a href="#">Doctors</a></li>
             </ul>
 
             <ul id="nav-mobile" class="side-nav">
-                <?php if(isset($this->session->userdata['result']) && is_array($this->session->userdata['result'])){
-                    ?>
-                    <a class='waves-effect dropdown-button btn' href='#' data-beloworigin="true" data-activates='login-l'>Profile</a>
-                    <ul id='login-l' class='dropdown-content'>
-                        <li><a href="#!">one</a></li>
-                        <li><a href="#!">two</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#!">three</a></li>
-                    </ul>
-                <?php
-                } else{
-                    ?>
-                    <a class='waves-effect modal-trigger btn' href='#modal1'>Login</a>
-
-                <?php } ?>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Forums</a></li>
+                <li><a href="#">Doctors</a></li>
+                <a class='waves-effect modal-trigger btn' href='#modal1'>Login</a>
             </ul>
+
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
         </div>
     </nav>
@@ -140,6 +119,7 @@
 
         <!--   Icon Section   -->
         <div class="row">
+            <!--
             <div class="col s12 m4">
                 <div class="icon-block">
                     <h2 class="center brown-text"><i class="mdi-image-flash-on"></i></h2>
@@ -166,11 +146,66 @@
                     <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
                 </div>
             </div>
+            -->
+
         </div>
 
     </div>
 </div>
 
+<div class="row">
+    <div class="col s12 m4 l4">
+        <div class="col l10 offset-l2">
+            <div class="card small">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="images/service/Green.jpg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Card Title 1 : <i class="mdi-navigation-more-vert right"></i></span>
+                    <p><a href="#">This is a link</a></p>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col s12 m4 l4">
+        <div class="col l10 offset-l1">
+            <div class="card small">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="images/service/White.jpg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Card Title 2 : <i class="mdi-navigation-more-vert right"></i></span>
+                    <p><a href="#">This is a link</a></p>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col s12 m4 l4">
+        <div class="col l10 ">
+            <div class="card small">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="images/service/bob_marley_one_love-56440.jpg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Card Title 3 : <i class="mdi-navigation-more-vert right"></i></span>
+                    <p><a href="#">This is a link</a></p>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">

@@ -33,7 +33,7 @@ class Home extends CI_Controller {
         $this->load->view('user/footer');
         */
 
-        $this->load->view('user/home');
+        $this->load->view('user/home', $photo_active);
 	}
 	public function welcome_message(){
 		echo $this->input->post('alala');
