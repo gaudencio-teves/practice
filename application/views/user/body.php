@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-    <title>Dentview Dental Clinic</title>
-
-    <!-- CSS  -->
-    <link href="<?php echo base_url()?>css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="<?php echo base_url()?>css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-</head>
 <body onLoad="initialize()">
 
 <div class="navbar-fixed">
@@ -133,23 +122,23 @@
 </div>
 
 -->
-    <div class="container">
-        <div class="section">
-            <div class="row">
-                <div class="col s12 center">
-                    <h3><i class="mdi-social-public brown-text"></i></h3>
-                    <h4><a class="" style="color:rgba(42, 42, 42, 1)" href="/services" title="Click to see all the Services">Services</a></h4>
-                    <p class="center-align light">
-                        A lively, intelligent, highly advanced equipment, superior dentistry that holds the foothold of every clinic in Cebu
-                    </p>
-                </div>
+<div class="container">
+    <div class="section">
+        <div class="row">
+            <div class="col s12 center">
+                <h3><i class="mdi-social-public brown-text"></i></h3>
+                <h4><a class="" style="color:rgba(42, 42, 42, 1)" href="/services" title="Click to see all the Services">Services</a></h4>
+                <p class="center-align light">
+                    A lively, intelligent, highly advanced equipment, superior dentistry that holds the foothold of every clinic in Cebu
+                </p>
             </div>
-
         </div>
+
     </div>
+</div>
 
 
-    <div class="row">
+<div class="row">
     <div class="col s12 m4 l4">
         <div class="col l10 offset-l2">
             <div class="card small">
@@ -202,13 +191,13 @@
         </div>
     </div>
 </div>
-        <div class="row">
-            <div class="col s12 center">
-                <p class="center-align light">
-                    <h1><a href="/services" title="Click for Check all the Services"><i class="mdi-navigation-expand-more"></i></a></h1>
-                </p>
-            </div>
-        </div>
+<div class="row">
+    <div class="col s12 center">
+        <p class="center-align light">
+        <h1><a href="/services" title="Click for Check all the Services"><i class="mdi-navigation-expand-more"></i></a></h1>
+        </p>
+    </div>
+</div>
 
 <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
@@ -251,13 +240,13 @@
 
     </div>
 </div>
-        <div class="row">
-            <div class="col s12 center">
-                <p class="center-align light">
-                <h1><a href="/location" title="Click for Check all the Services"><i class="mdi-navigation-expand-more"></i></a></h1>
-                </p>
-            </div>
-        </div>
+<div class="row">
+    <div class="col s12 center">
+        <p class="center-align light">
+        <h1><a href="/location" title="Click for Check all the Services"><i class="mdi-navigation-expand-more"></i></a></h1>
+        </p>
+    </div>
+</div>
 
 <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
@@ -269,77 +258,3 @@
     </div>
     <div class="parallax"><img src="<?php echo base_url()?>images/skyline65.jpg" alt="Unsplashed background img 3"></div>
 </div>
-
-<footer class="page-footer teal">
-    <div class="container">
-        <div class="row">
-                <div class="col l6 s12 white-text right-align hide-on-med-and-down">
-                    <h2><i class="mdi-image-tag-faces white-text"></i></h2>
-                    <h4>Who we are</h4>
-                    <p class="light"> We are a dedicated group of individuals that has lived to do one thing: to make a world wherein smile can be seen everywhere
-                      </br>
-                        Developer: Gaudencio Teves
-                        </br>
-                         Lead Dentist: Joel Taytayan
-
-                    </p>
-                </div>
-                <div class="col l6 s12 white-text left-align show-on-small hide-on-large-only">
-                    <h2><i class="mdi-image-tag-faces white-text"></i></h2>
-                    <h4>Who we are</h4>
-                    <p class="light"> We are a dedicated group of individuals that has lived to do one thing: to make a world wherein smile can be seen everywhere
-                        </br>
-                        Developer: Gaudencio Teves
-                        </br>
-                        Lead Dentist: Joel Taytayan
-
-                    </p>
-                </div>
-
-                <div class="col l6 s12 white-text">
-                    <h2><i class="mdi-maps-local-phone white-text"></i></h2>
-                    <h4>Contact Us</h4>
-                    <p class="left-align light"> Questions? Suggestions? Give us a thumb!
-                        </br>
-                        <i class="mdi-communication-email"></i>
-                        captainbuggythefifth@gmail.com
-                        </br>
-                        <i class="mdi-hardware-smartphone"></i>
-                        +632945678643
-                    </p>
-                </div>
-        </div>
-    </div>
-    <div class="footer-copyright">
-        <div class="container">
-            Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Gaudencio Teves</a>
-            </br>
-            Powered by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-        </div>
-    </div>
-</footer>
-
-
-
-<!--  Scripts-->
-<script src="https://code.jquery.com/jquery-2.1.1.min.js">
-    $( window ).resize(function() {
-        //$( "#log" ).append( "<div>Handler for .resize() called.</div>" );
-        $(".map").width($(".map").parent().width());
-        $(".map").height($(".map").parent().height());
-    });
-</script>
-<script src="<?php echo base_url()?>js/materialize.js"></script>
-<script src="<?php echo base_url()?>js/init.js"></script>
-<script src="<?php echo base_url()?>js/smooth.js"></script>
-<script src="<?php echo base_url()?>js/inMaterialize.js"></script>
-<script type="javascript">
-    $( window ).resize(function() {
-        //$( "#log" ).append( "<div>Handler for .resize() called.</div>" );
-        $(".map").width($(".map").parent().width());
-        $(".map").height($(".map").parent().height());
-    });
-</script>
-
-</body>
-</html>

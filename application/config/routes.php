@@ -40,7 +40,9 @@
 
 $route['default_controller'] = "user/home";
 $route['user/login'] = "user/user/login";
+$route['services'] = "user/user/services";
 $route['user/logout'] = "user/user/logout";
+$route['see-more-photos/(:any)'] = "user/user/see_more_photos/$1";
 //$route['user-home-welcome_message'] = "user/home/welcome_message";
 $route['404_override'] = '';
 

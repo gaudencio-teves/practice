@@ -22,6 +22,7 @@ class User extends CI_Controller {
         // Your own constructor code
         $this->load->model('user/photo_model','photo');
         $this->load->model('user/user_model');
+        $this->load->model('user/service_model', 'service');
         $this->load->library('encrypt');
     }
     public function index(){
@@ -51,6 +52,23 @@ class User extends CI_Controller {
         else{
             redirect(base_url()."?message=0");
         }
+    }
+
+    public function services(){
+        //$result['photo'] = $this->photo->get_active_from_service();
+        $result = $this->service->get_active();
+        $i = 0;
+
+        foreach($result as $service){
+            $service_photo = $this->photo->get_photo_from_id_and_from($service['id'], 'service');
+            $result[$i]['service_photo'] = $service_photo;
+            $i++;
+        }
+        $services['services'] = $result;
+        //var_dump($result);die();
+        $this->load->view('user/header');
+        $this->load->view('user/service', $services);
+        $this->load->view('user/footer');
     }
 
     public function logout(){

@@ -26,14 +26,9 @@ class Home extends CI_Controller {
         $photo_active = array(
             'photo_active' => $this->photo->get_active_from_service()
         );
-        //var_dump($this->photo->get_active());
-		/*$this->load->view('user/header');
-        $this->load->view('user/carousel');
-        $this->load->view('user/main', $photo_active);
+		$this->load->view('user/header');
+        $this->load->view('user/body', $photo_active);
         $this->load->view('user/footer');
-        */
-
-        $this->load->view('user/home', $photo_active);
 	}
 	public function welcome_message(){
 		echo $this->input->post('alala');
