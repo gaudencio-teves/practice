@@ -140,7 +140,7 @@
 
 <div class="row">
     <div class="col s12 m4 l4">
-        <div class="col l10 offset-l2">
+
             <div class="card small">
                 <div class="card-image waves-effect waves-block waves-light">
                     <img class="activator" src="images/service/Green.jpg">
@@ -154,10 +154,9 @@
                     <p>Here is some more information about this product that is only revealed once clicked on.</p>
                 </div>
             </div>
-        </div>
     </div>
     <div class="col s12 m4 l4">
-        <div class="col l10 offset-l1">
+
             <div class="card small">
                 <div class="card-image waves-effect waves-block waves-light">
                     <img class="activator" src="images/service/White.jpg">
@@ -171,10 +170,9 @@
                     <p>Here is some more information about this product that is only revealed once clicked on.</p>
                 </div>
             </div>
-        </div>
     </div>
     <div class="col s12 m4 l4">
-        <div class="col l10 ">
+
             <div class="card small">
                 <div class="card-image waves-effect waves-block waves-light">
                     <img class="activator" src="images/service/bob_marley_one_love-56440.jpg">
@@ -188,7 +186,6 @@
                     <p>Here is some more information about this product that is only revealed once clicked on.</p>
                 </div>
             </div>
-        </div>
     </div>
 </div>
 <div class="row">
@@ -212,13 +209,11 @@
 
 <div class="container">
     <div class="section">
-
         <div class="row">
             <div class="col s12 center">
                 <h3><i class="mdi-communication-location-on brown-text"></i></h3>
                 <h4>Our Location</h4>
                 <p class="center-align light"> APM Shopping Mall Soriano Avenue, Cebu North Reclamation Area Cebu City, Philippines </p>
-
             </div>
         </div>
 
@@ -228,11 +223,11 @@
     <div class="section">
 
         <div class="row">
-            <div class="col s12 center">
+            <div class="col s12 m12 l12 center">
                 <div class="s6 m4 l2 hide-on-med-and-down">
                     <iframe class="map  z-depth-3" src="https://www.google.com/maps/d/embed?mid=z_xhSjPnDltc.kRxjxwyChNN0" style="width: 900px; height: 360px;  border: 0px"></iframe>
                 </div>
-                <div class="s2 m1 hide-on-large-only show-on-small">
+                <div class="s1 m1 hide-on-large-only show-on-small">
                     <iframe class="map  z-depth-3" src="https://www.google.com/maps/d/embed?mid=z_xhSjPnDltc.kRxjxwyChNN0" style="width: 300px; height: 300px; border: 0px"></iframe>
                 </div>
             </div>

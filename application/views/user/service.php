@@ -4,7 +4,7 @@
     <nav class="white" role="navigation">
         <div class="nav-wrapper container">
             <a id="logo-container" href="#" class="center brand-logo">Logo</a>
-            <ul class="right hide-on-med-and-down">
+            <ul class="right hide-on-medgit -and-down">
                 <a class='waves-effect modal-trigger btn' href='#modal-login-large'>Login</a>
             </ul>
             <ul class="left hide-on-med-and-down">
@@ -90,66 +90,12 @@
 <div class="container">
     <div class="section">
 <div class="row">
-    <!--
-    <div class="col s12 m4 l4">
-        <div class="col l10 offset-l2">
-            <div class="card small">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="images/service/Green.jpg">
-                </div>
-                <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Card Title 1 : <i class="mdi-navigation-more-vert right"></i></span>
-                    <p><a href="#">This is a link</a></p>
-                </div>
-                <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
-                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col s12 m4 l4">
-        <div class="col l10 offset-l1">
-            <div class="card small">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="images/service/White.jpg">
-                </div>
-                <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Card Title 2 : <i class="mdi-navigation-more-vert right"></i></span>
-                    <p><a href="#">This is a link</a></p>
-                </div>
-                <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
-                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col s12 m4 l4">
-        <div class="col l10 ">
-            <div class="card small">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="images/service/bob_marley_one_love-56440.jpg">
-                </div>
-                <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Card Title 3 : <i class="mdi-navigation-more-vert right"></i></span>
-                    <p><a href="#">This is a link</a></p>
-                </div>
-                <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
-                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    -->
     <?php
         $i = 0;
         foreach($services as $serv){
             //var_dump($serv);
      ?>
-            <div class="col s10 m3 l4">
-                <div class="col s12">
+            <div class="col s12 m4 l4">
                     <div class="card small">
                         <div class="card-image waves-effect waves-block waves-light">
                             <img class="activator" src="<?php echo $serv['service_photo'][0]['source']?>">
@@ -157,14 +103,13 @@
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4"><?php echo $serv['name']?><i class="mdi-navigation-more-vert right" title="More information"></i></span>
                             <!--<p><a href="#">See more<i class="mdi-navigation-chevron-right"></i></a></p>-->
-                            <h5><i class="mdi-navigation-chevron-right" onclick="Javascript:see_more_service_photo('<?php echo $serv['id']?>','<?php echo base_url()."see-more-photos?service_id=".$serv['id']?>')" title="See more" data-service-id="<?php echo $serv['id']?>"></i></h5>
+                            <h4><i class="mdi-navigation-chevron-right see_more" title="See more" data-service-id="<?php echo $serv['id']?>"</i></h4>
                         </div>
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-4">Description: <i class="mdi-navigation-close right"></i></span>
                             <p><?php echo $serv['description']?></p>
                         </div>
                     </div>
-                </div>
             </div>
     <?php
             $i++;
@@ -174,5 +119,4 @@
         </div>
     </div>
 </div>
-<script type="javascript" src="<?php echo base_url("js/custom.js")?>">
-</script>
+<button onclick="see_more(this)">ALAALALALALALALH!</button>

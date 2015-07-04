@@ -2,7 +2,7 @@
  * Created by sebu013 on 6/12/15.
  */
 function see_more_service_photo(service_id,url){
-    var res = null;
+   /* var res = null;
     $.ajax({
         url : url,
         method : "GET",
@@ -11,5 +11,6 @@ function see_more_service_photo(service_id,url){
             res = result;
         }
     });
-    return res;
+    return res;*/
+    alert(service_id);
 }

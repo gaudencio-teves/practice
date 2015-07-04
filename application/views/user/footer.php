@@ -50,23 +50,33 @@
 
 
 <!--  Scripts-->
-<script src="https://code.jquery.com/jquery-2.1.1.min.js">
-    $( window ).resize(function() {
-        //$( "#log" ).append( "<div>Handler for .resize() called.</div>" );
-        $(".map").width($(".map").parent().width());
-        $(".map").height($(".map").parent().height());
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.see_more').click(function(){
+            alert($(this).data('service-id'));
+        });
     });
+    function see_more_service_photo(data){
+        alert(data.data('serviceiid'));
+    }
 </script>
 <script src="<?php echo base_url()?>js/materialize.js"></script>
 <script src="<?php echo base_url()?>js/init.js"></script>
-<script src="<?php echo base_url()?>js/smooth.js"></script>
 <script src="<?php echo base_url()?>js/inMaterialize.js"></script>
+
 <script type="javascript">
-    $( window ).resize(function() {
+    /*$( window ).resize(function() {
         //$( "#log" ).append( "<div>Handler for .resize() called.</div>" );
         $(".map").width($(".map").parent().width());
         $(".map").height($(".map").parent().height());
     });
+    $(document).ready(function(){
+        alert("alalah!");
+    });
+    function see_more(){
+        this.val("alalah!");
+    }*/
 </script>
 
 </body>
